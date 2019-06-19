@@ -523,6 +523,7 @@ class MeanRelativeError(Mean):
     return dict(list(base_config.items()) + list(config.items()))
 
 
+@tf_export('keras.metrics.MeanMetricWrapper')
 class MeanMetricWrapper(Mean):
   """Wraps a stateless metric function with the Mean metric."""
 
